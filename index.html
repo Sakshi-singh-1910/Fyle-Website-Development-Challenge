@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id = "header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html#header">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="growth.html">Company Growth</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p1>AWARD WINNING</p1>
+            <h1>DIGITAL MARKETING<br>AGENCY</h1>
+            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque <br> vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus <br> feugiat et fermentum </p>
+        </div>
+        <br>
+       <div>
+        <a href="contact.html" class="btn">CONTACT US</a>
+       </div>
+    </div>
+</div>
+<footer>   
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <h2 class="social">Let's get social</h2>
+    <div class="wrapper">
+        <a href="#" class="icon facebook">
+            <div class="tooltip">Facebook</div>
+            <span><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href=" #" class="icon instagram">
+            <div class="tooltip">Instagram</div>
+            <span><i class="fab fa-instagram"></i></span>
+        </a>
+        <a href="#" class="icon github">
+            <div class="tooltip">Github</div>
+            <span><i class="fab fa-github"></i></span>
+        </a>
+        <a href="#" class="icon linkedin">
+            <div class="tooltip">LinkedIn</div>
+            <span><i class="fab fa-linkedin"></i></span>
+        </a>
+        <a href="" class="icon youtube">
+            <div class="tooltip">Youtube</div>
+            <span><i class="fab fa-youtube"></i></span>
+        </a>
+    </div>
+</footer>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+
+</body>
+</html>

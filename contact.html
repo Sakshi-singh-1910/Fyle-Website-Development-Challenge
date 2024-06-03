@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0 
+}
+.container {
+    width: 500px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 30px;
+    text-align: left;
+    }
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+input[type="email"],
+input[type="text"] {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+}
+button[type="submit"] {
+  background-color: #ff0055;
+  color: white;
+  padding: 10px 216px;
+  text-decoration: none; 
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block; 
+}
+
+.contact-button:hover  {
+  background-color: #cc0052;
+}
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Talk to us</h1>
+        <form action="https://getform.io/f/pboxjqza" method="POST">
+            <label for="work_email">Work email:</label><br>
+            <input type="email" id="work_email" name="email" placeholder="Your Email" required><br>
+            <label for="firstname">First name:</label><br>
+            <input type="text" id="firstname" name="name" placeholder="First Name" required><br>
+            <label for="lastname">Last name:</label><br>
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name" required><br><br>
+            <input type="checkbox" name="subscribe" value="yes"> I agree to Fyle's terms and conditions, and provide consent to send me communication.<br><br>
+            <button type="submit" class="contact-button">Contact Us</button>
+        </form>
+    </div>
+</body>
+</html>

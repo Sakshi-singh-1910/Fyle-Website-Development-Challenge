@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our Project</title>
+  <style>
+    #services {
+      padding: 120px 0;
+      align-items: center;
+      background-color: white;
+    }
+    .project-list{
+      float: right; /* Aligns the container to the right */
+      width: 30%; /* 30% of the viewport width */
+      margin-left: 70%; /* Pushes the container to the right */
+    }
+    .project-list div{
+      background: white;
+      margin-top: -160px;
+      padding: 40px;
+      font-size: 13px;
+      font-weight: 300;
+      border-radius: 10px;
+      transition: background 0.5s, transform 0.5s;
+      color: black;
+      margin-bottom: -350px; /* Reduced space between blocks */
+      cursor: pointer; /* Change cursor to pointer on hover */
+    }
+
+    .project-list div p{
+      margin-top: -2px;
+      margin-bottom: 15px;
+      color: black;
+    }
+    .project-list div h5{
+      margin-top: -15px;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 15px;
+      color: black;
+    }
+    .project-list div:hover{
+      background: #ff004f;
+      transform: translateY(-10px);
+    }
+    .project-image {
+      width: 50%; /* 50% of the viewport width */
+    }
+    .project-image img {
+      margin-top: 20px;
+      margin-left: 40px;
+      width: 100%; /* Image width to fill the container */
+      display: block; /* Remove default image spacing */
+      border-radius: 10px; /* Rounded corners for the image */
+    }
+    h3 {
+      text-align: center;
+      font-size: 20px;
+      margin: 10px 0;
+      color: #ff004c;
+    }
+    h2 {
+      text-align: center;
+      font-size: 45px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>OUR PROJECT</h3>
+    <h2>WHY WE ARE BEST</h2>
+    <div class="project-image">
+      <img id="mainImage" src="1.jpg" alt="Project Image">
+    </div>
+    <div class="project-list">
+      <div onclick="changeImage('1.jpg')">
+        <h5>Genderless Kei - Japan's Hot</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, auctor id, porta lorem. Maecenas consequat semper risus. Nulla sed leo auctor id, porta.</p>
+      </div>
+      <div onclick="changeImage('table.jpg')">
+        <h5>Better Strategy & Quality</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, auctor id, porta lorem. Maecenas consequat semper risus. Nulla sed leo auctor id, porta.</p>
+      </div>
+      <div onclick="changeImage('2.jpg')">
+        <h5>Improved User Experience</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, auctor id, porta lorem. Maecenas consequat semper risus. Nulla sed leo auctor id, porta.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function changeImage(imagePath) {
+      document.getElementById('mainImage').src = imagePath;
+    }
+  </script>
+</body>
+</html>

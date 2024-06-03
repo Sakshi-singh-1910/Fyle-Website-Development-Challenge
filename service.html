@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/15b6513453.js" crossorigin="anonymous"></script>
+    <style>
+        /*------------------portfolio-------------------*/
+        #Project {
+            padding: 0.5px 0;
+            background-color: white;
+            text-align: center;
+            color: black;
+            font-size: 50px;
+            font-weight: 500;
+        }
+        .container {
+            position: relative;
+            overflow: hidden;
+        }
+        .work-list {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .work {
+            border-radius: 5px;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px;
+            color: black;
+            flex: 0 0 25%; /* Four images per slide */
+        }
+        .work img {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+            transition: transform 0.5s;
+
+        }
+        .layer {
+            width: 100%;
+            height: 0;
+            background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 40px;
+            text-align: left;
+            font-size: 14px;
+            transition: height 0.5s;
+        }
+        .layer h3 {
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .layer a {
+        margin: 20px;
+        color: #ff004f;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 60px;
+        background: white;
+        width: 100px; /* Adjust width and height for square shape */
+        height: 40px; /* Adjust width and height for square shape */
+        border-radius: 6px; /* Add border-radius for rounded corners */
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.5s;
+    }
+    .layer a:hover {
+        background: #ff004f;
+        color: white;
+    }
+        .work:hover img {
+            transform: scale(1.1);
+        }
+        .work:hover .layer {
+            height: 100%;
+        }
+        .header-text{
+            margin-top: 25px;
+            font-size: 30px;
+            text-align: left;
+        }
+        .header-text h1{
+           font-size: 47px;
+           margin-top: 20px;
+        }
+        .header-text P1{
+            color: #ff004c;
+        }
+        .header-text p{
+            margin-top: -120px;
+            margin-bottom: -80px;
+            font-size: 20px;
+            text-align: right;
+        }
+        .btn {
+            display: block;
+            margin: 50px auto;
+            width: fit-content;
+            border: 1px solid #ff004f;
+            padding: 14px 50px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #fff;
+            transition: background 0.5s;
+        }
+        .btn:hover {
+            background: #ff004f;
+        }
+        .btn.btn2 {
+            display: inline-block;
+            background: #ff004f;
+        }
+        .dots {
+            position: absolute;
+            bottom: 35px;
+            left: 10px; /* Dots on the bottom left */
+            display: flex;
+            gap: 10px;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            cursor: pointer;
+        }
+        .active {
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+<div id="Project">
+    <div class="container">
+        <div class="header-text">
+            <p1>WHAT WE DO</p1>
+            <h1>SERVICES PROVIDE <br> FOR YOU</h1>
+            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. <br>Pellentesque vitae ante at elit fringilla ac at purus, Morbi <br> sed lacus nec risus finibus feugiat et fermentum</p>
+        </div>
+        <br>
+        <br>
+        <div class="work-list">
+            <div class="work">
+                <img src="girl.jpg">                
+                <div class="layer">
+                    <h2>Database Management <br>System</h2>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com/">Read more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="bottle.jpg">
+                <div class="layer">
+                    <h2>Front-end Developer</h2>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com/">Read more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://w.forfun.com/fetch/00/0043a0b0e55215af9fd47074c5cf9497.jpeg">                
+                <div class="layer">
+                    <h2>Web Developer</h2>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com/">Read more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="basket.jpg">
+                <div class="layer">
+                    <h2>SQL</h2>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com/">Read more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="girl.jpg">
+                <div class="layer">
+                    <h2>SQL</h2>
+                    <p>As a SQL database expert, I possess a deep understanding of Structured Query Language (SQL) and its application in managing and manipulating data within relational databases. I have a strong command of database design, query optimization, and data modeling. My expertise extends to database administration, ensuring data integrity, security, and performance.</p>
+                    <a href="https://www.fylehq.com/">Read more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="bottle.jpg">
+                <div class="layer">
+                    <h2>Front-end Developer</h2>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com/">Read more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://w.forfun.com/fetch/00/0043a0b0e55215af9fd47074c5cf9497.jpeg">                
+                <div class="layer">
+                    <h2>Web Developer</h2>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com/">Read more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="basket.jpg">                
+                <div class="layer">
+                    <h2>Database Management <br>System</h2>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com/">Read more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="girl.jpg">
+                <div class="layer">
+                    <h2>SQL</h2>
+                    <p>As a SQL database expert, I possess a deep understanding of Structured Query Language (SQL) and its application in managing and manipulating data within relational databases. I have a strong command of database design, query optimization, and data modeling. My expertise extends to database administration, ensuring data integrity, security, and performance.</p>
+                    <a href="https://www.fylehq.com/">Read more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="bottle.jpg">
+                <div class="layer">
+                    <h2>Front-end Developer</h2>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <a href="https://www.fylehq.com/">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="dots">
+            <span class="dot"></span><br>
+            <span class="dot"></span><br>
+            <span class="dot"></span><br>
+        </div>
+    </div>
+</div>
+
+<script>
+    const workList = document.querySelector('.work-list');
+    const dots = document.querySelectorAll('.dot');
+    let currentIndex = 0;
+    const totalItems = document.querySelectorAll('.work').length;
+    const itemsPerSlide = 4;
+    const totalSlides = Math.ceil(totalItems / itemsPerSlide);
+
+    function showSlide(index) {
+        const offset = -index * 100;
+        workList.style.transform = `translateX(${offset}%)`;
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentIndex = index;
+            showSlide(currentIndex);
+        });
+    });
+
+    function autoSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+    }
+
+    let slideInterval = setInterval(autoSlide, 3000);
+
+    workList.addEventListener('mouseover', () => clearInterval(slideInterval));
+    workList.addEventListener('mouseout', () => slideInterval = setInterval(autoSlide, 3000));
+
+    showSlide(currentIndex);
+</script>
+
+</body>
+</html>
+
+
